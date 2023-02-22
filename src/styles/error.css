@@ -1,0 +1,57 @@
+main{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    background-color: black;
+    color: var(--color-grey-7);
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8rem;
+
+    font-family: var(--font-primary);
+}
+
+.message__container{
+    display: flex;
+    flex-direction: column;    
+    gap: .5rem;
+
+    width: 19rem;
+
+}
+
+.message__container > p {
+    width: 90%;
+}
+
+.message__container > a {
+    padding: .9rem 6.25rem;
+
+    text-decoration: none;
+
+    color: var(--color-grey-7);
+
+    background-color: var(--color-brand-2);
+
+    border-radius: .3rem;
+
+    cursor: pointer;
+}
+
+.errorImg__container{
+    background-color: var(--color-brand-2);
+
+    width: 24rem;
+    height: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .3rem;
+
+    box-shadow: 1.4rem 1.4rem #520F84;
+}
