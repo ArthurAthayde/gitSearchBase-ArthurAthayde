@@ -9,10 +9,10 @@ export async function getUserByName(username) {
     })
         .then(response => {
             if (response.ok) {
-                window.location.replace('../src/pages/profile.html')
+                window.location.replace('../pages/profile.html')
                 return response.json()
             } else {
-                window.location.replace('../src/pages/error.html');
+                window.location.replace('../pages/error.html');
             }
         })
 
@@ -31,10 +31,10 @@ export async function getUserRepos(username) {
 
         .then(response => {
             if (response.message == "Not Found") {
-                window.location.replace('../src/pages/error.html');
+                window.location.replace('../pages/error.html');
             } else {
                 localStorage.setItem('searchUser', JSON.stringify(response))
-                window.location.replace('../src/pages/profile.html')
+                window.location.replace('../pages/profile.html')
                 return response.json()
             }
         })
