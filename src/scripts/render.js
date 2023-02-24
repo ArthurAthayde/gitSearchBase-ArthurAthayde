@@ -47,8 +47,7 @@ export function createCard(element){
     repoBtn.classList.add('repositoryBtn');
     repoBtn.innerText = 'Repositório';  
     repoBtn.href = element.html_url; 
-    repoBtn.target = '_blank'
-    console.log(element.html_url);
+    repoBtn.target = '_blank';
 
     repoContainer.append(repoTitle, repoDescription, repoBtn);
 
