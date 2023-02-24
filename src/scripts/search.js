@@ -5,7 +5,9 @@ export function searchUser() {
     const button = document.querySelector('.user__button');
 
     button.addEventListener('click', async () => {
-        const user = await getUserRepos(input.value);
+        await getUserByName(input.value);
+        await getUserRepos(input.value);
+        
     })
 
 }

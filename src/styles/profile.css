@@ -28,6 +28,14 @@ header{
     margin: 3rem auto;
 }
 
+img{
+    width: 50px;
+
+    border-radius: 100%;
+    border: solid 2px var(--color-brand-1);
+}
+
+
 .user__container{
     display: flex;
     align-items: center;
@@ -122,6 +130,8 @@ list-style: none;
     background-color: transparent;
 
     cursor: pointer;
+
+    text-decoration: none;
 }
 
 .repository__container:hover{

@@ -87,6 +87,8 @@ p {
     padding: .25rem;
 
     border-radius: 0.31rem;
+
+    color: white;
 }
 
 .align__itens>button {

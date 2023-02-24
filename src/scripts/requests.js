@@ -7,12 +7,12 @@ export async function getUserByName(username) {
             'Content-Type': 'application/json'
         }
     })
+        .then(response => response.json())
         .then(response => {
-            if (response.ok) {
-                window.location.replace('../src/pages/profile.html')
-                return response.json()
+            if (response.message == "Not Found") {
+                window.location.replace('./src/pages/error.html');
             } else {
-                window.location.replace('../src/pages/error.html');
+                localStorage.setItem('username', JSON.stringify(response));
             }
         })
 
@@ -31,10 +31,10 @@ export async function getUserRepos(username) {
 
         .then(response => {
             if (response.message == "Not Found") {
-                window.location.replace('../src/pages/error.html');
+                window.location.replace('./src/pages/error.html');
             } else {
                 localStorage.setItem('searchUser', JSON.stringify(response))
-                window.location.replace('../src/pages/profile.html')
+                window.location.replace('./src/pages/profile.html')
                 return response.json()
             }
         })

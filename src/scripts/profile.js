@@ -7,3 +7,12 @@ function showProfile(){
 }
 
 showProfile()
+
+
+
+// const userRepo = JSON.parse(localStorage.getItem('searchUser'))
+// function renderAllRepos(array){
+
+
+// }
+// renderAllRepos(userRepo)
